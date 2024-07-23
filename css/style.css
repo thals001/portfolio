@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #4d4d4d;
-  background: #fff;
+  background: #d8d8d8;
 }
 
 #page {
@@ -57,15 +57,43 @@ body {
   padding-left: 30px;
   color: #fff;
 }
+.gnb li a:hover{
+  color: #ccc;
+}
 #main>img{
   max-width: 100%;
-  padding-left: 100px;
+  padding-left: 10%;
 }
 .img1{
   position: absolute;
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#fh5co-about{
+  background-color: #3e458c;
+  background-repeat: repeat-x;
+  height: 800px;
+  color: #fff;
+}
+#fh5co-about .row{
+  padding-left: 50px;
+}
+#fh5co-about .row h2{
+  padding-top: 70px;
+  color: #fff;
+}
+#fh5co-about .row p{
+  font-weight: 400;
+}
+
+#fh5co-work .row{
+
+}
+
+
+#fh5co-work{
 }
 .offcanvas #page {
   overflow: hidden;
@@ -87,7 +115,7 @@ body {
 }
 
 a {
-  color: #FF9000;
+  color: #333;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -96,7 +124,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #FF9000;
+  color: #ccc;
   outline: none;
   text-decoration: none;
 }
@@ -355,7 +383,7 @@ figure {
 #fh5co-blog,
 #fh5co-pricing,
 #fh5co-contact {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 
@@ -381,16 +409,18 @@ figure {
 }
 
 .fh5co-bg-dark .fh5co-heading h2 {
-  color: #fff !important;
+  color: #333 !important;
 }
 
 .info {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   width: 90%;
   margin-bottom: 2.5em;
 }
-
+.info li span{
+  color: #fff;
+}
 
 
 .info li {
@@ -406,14 +436,14 @@ figure {
 .info li .first-block {
   width: 40%;
   display: inline-block;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 
 .info li .second-block {
   width: 60%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .fh5co-social-icons {
@@ -482,7 +512,8 @@ figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-top: 4em;
+  margin-bottom: 3em;
 }
 
 .fh5co-heading.fh5co-heading-sm {
@@ -522,7 +553,7 @@ figure {
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #e6e6e6;
+  background-color: #777777;
   left: 50%;
   margin-left: 0px;
 }
@@ -629,7 +660,7 @@ figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  background-color: #7e84d0;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -694,7 +725,7 @@ figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #bfbfbf;
+  color: #727272;
 }
 
 .timeline-body>p,
@@ -1556,5 +1587,11 @@ input[type="text"] {
 
   .work_text {
     height: auto;
+  }
+}
+
+@media (max-width:500px){
+  .gnb{
+    display: none;
   }
 }
